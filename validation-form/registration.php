@@ -1,4 +1,9 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
+mb_internal_encoding('UTF-8');
+
 $login = filter_var(trim($_POST['login']), FILTER_UNSAFE_RAW);
 $name = filter_var(trim($_POST['name']), FILTER_UNSAFE_RAW);
 $password = filter_var(trim($_POST['password']), FILTER_UNSAFE_RAW);
