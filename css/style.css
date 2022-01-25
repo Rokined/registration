@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: roboto;
+}
+h1{
+    font-weight: 400;
+    font-size: 24px;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+.form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    min-height: 100px;
+    box-shadow: 0px 0px 15px rgba(28, 48, 176, 0.7);
+    border-radius: 15px;
+}
+
+/*-button-*/
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    min-width: 200px;
+    background-color: rgba(91, 57, 178, 0.3);
+    font-size: 18px;
+    margin-bottom: 9px;
+    border-radius: 7px;
+}
+.button:focus,
+.button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(109, 59, 238, 0.84);
+}
+
+/*-hello-*/
+.hello{
+}
+/*-autorization-error-*/
+.autorization-error{
+}
+/*-registration-error-*/
+.registration-error{
+}
+/*-registration-success-*/
+.registration-success{
+}
+/*-autorization-success-*/
+.autorization-success{
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*-form-input-*/
+.registration{
+    padding-bottom :10px;
+}
+.form-input{
+    padding: 0px 10px ;
+    width: 100%;
+}
+.input-group{
+}
+.input-group__input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.743);
+    outline: none;
+    background-color: transparent;
+}
+.input-group__label{
+    position: relative;
+    bottom: 20px;
+    opacity: 0.3;
+}
+
+.input-group__input:focus ~ .input-group__label,
+.input-group__input:not(:placeholder-shown) ~ .input-group__label
+{
+    bottom: 40px;
+    font-size: 10px;
+    transition: 0.3s;
+}

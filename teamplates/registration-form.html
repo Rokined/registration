@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Registration-form</title>
+</head>
+<body>
+    <form method="POST" class="form registration" action="/validation-form/registration.php">
+        <h1>Регистрация</h1>
+        <div class="form-input">
+            <div class="input-group">
+                <input type="text" class="input-group__input" name="login" placeholder=" " required>
+                <label for="#" class="input-group__label">login</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="input-group__input" name="name" placeholder=" " required>
+                <label for="#" class="input-group__label">name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="input-group__input" name="password" placeholder=" " required>
+                <label for="#" class="input-group__label">password</label>
+            </div>
+        </div>
+        <button class="button">Зарегистрироваться</button>
+    </form>
+</body>
+</html> 
